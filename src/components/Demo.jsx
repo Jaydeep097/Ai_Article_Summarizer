@@ -132,9 +132,19 @@ const Demo = () => {
                 Article <span className='blue_gradient'>Summary</span>
               </h2>
               <div className='summary_box'>
-                <p className='font-inter font-medium text-sm text-gray-700'>
-                  {article.summary}
-                </p>
+                <ul className='list-disc list-inside space-y-2'>
+                  {article.summary
+                    .split(/(?<=[.!?])\s+/)
+                    .filter((point) => point.trim().length > 0)
+                    .map((point, index) => (
+                      <li
+                        key={index}
+                        className='font-inter font-medium text-sm text-gray-700'
+                      >
+                        {point.trim()}
+                      </li>
+                    ))}
+                </ul>
               </div>
             </div>
           )
