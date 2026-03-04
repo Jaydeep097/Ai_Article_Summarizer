@@ -5,7 +5,7 @@ import Demo from './components/Demo';
 
 import './App.css';
 
-const App = () => {
+const App = () =>{
   return (
     <main>
         <div className="main">

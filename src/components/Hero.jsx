@@ -16,7 +16,7 @@ const Hero = () => {
       </nav>
       <h1 className="head_text">
         {" "}
-        Summarize Article with <br />
+        Summarize Article with <br/>
         <span className="orange_gradient">OpenAI GPT-4</span>
       </h1>
       <h2 className="desc">

@@ -11,7 +11,7 @@ const Demo = () => {
   const [allArticles, setAllArticles] = useState([]);
   const [copied, setCopied] = useState("");
 
-  // RTK lazy query
+  // RTK lazy query execution
   const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery();
 
   // Load data from localStorage on mount
